@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partidos | Uruguay Creadores (maqueta)</title>
+  <meta name="description" content="Fixture de la Copa Cuatro Naciones con los partidos de Uruguay Creadores.">
+  <link rel="icon" href="assets/escudo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <p class="aviso-maqueta">Esta es una maqueta de propuesta de diseño. No es el sitio oficial de Uruguay Creadores.</p>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html" aria-label="Uruguay Creadores, ir al inicio">
+        <img src="assets/escudo.png" alt="" width="371" height="546">
+        <span class="marca__nombre">Uruguay Creadores</span>
+      </a>
+      <nav class="menu" aria-label="Páginas del sitio">
+        <a href="index.html">Inicio</a>
+        <a href="partidos.html" aria-current="page">Partidos</a>
+        <a href="plantilla.html">Plantilla</a>
+        <a href="historia.html">Historia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="contenedor titulo-pagina__fila">
+        <div class="titulo-pagina__texto">
+          <h1>Copa Cuatro Naciones</h1>
+          <p>Argentina, Brasil, Chile y Uruguay se miden el 14 y 15 de noviembre.</p>
+        </div>
+        <img class="titulo-pagina__escudo" src="assets/escudo.png" alt="" width="371" height="546">
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <p class="seccion__bajada">El sábado se juegan seis partidos y el domingo se definen las semifinales, el tercer puesto y la final.</p>
+
+        <button class="filtro" id="filtro-uruguay" type="button" aria-pressed="false">Mostrar solo a Uruguay</button>
+
+        <div class="dias">
+          <div class="dia">
+            <h2 class="dia__titulo">Sábado 14</h2>
+            <ul class="lista-partidos">
+              <li class="partido partido--uruguay" data-uruguay="si"><span class="partido__hora">11:00</span><span class="partido__equipos">Argentina vs Uruguay</span></li>
+              <li class="partido" data-uruguay="no"><span class="partido__hora">12:30</span><span class="partido__equipos">Brasil vs Chile</span></li>
+              <li class="partido" data-uruguay="no"><span class="partido__hora">14:00</span><span class="partido__equipos">Argentina vs Brasil</span></li>
+              <li class="partido partido--uruguay" data-uruguay="si"><span class="partido__hora">15:30</span><span class="partido__equipos">Uruguay vs Chile</span></li>
+              <li class="partido" data-uruguay="no"><span class="partido__hora">17:00</span><span class="partido__equipos">Argentina vs Chile</span></li>
+              <li class="partido partido--uruguay" data-uruguay="si"><span class="partido__hora">18:30</span><span class="partido__equipos">Brasil vs Uruguay</span></li>
+            </ul>
+          </div>
+
+          <div class="dia">
+            <h2 class="dia__titulo">Domingo 15</h2>
+            <ul class="lista-partidos">
+              <li class="partido" data-uruguay="quiza"><span class="partido__hora">12:00</span><span class="partido__equipos">Semifinal 1</span><span class="partido__fase">1.º contra 4.º de la tabla</span></li>
+              <li class="partido" data-uruguay="quiza"><span class="partido__hora">13:30</span><span class="partido__equipos">Semifinal 2</span><span class="partido__fase">2.º contra 3.º de la tabla</span></li>
+              <li class="partido" data-uruguay="no"><span class="partido__hora">15:00</span><span class="partido__equipos">Amistoso internacional</span><span class="partido__fase">Streamers argentinas contra Latinoamérica</span></li>
+              <li class="partido" data-uruguay="quiza"><span class="partido__hora">16:00</span><span class="partido__equipos">Tercer puesto</span></li>
+              <li class="partido partido--final" data-uruguay="quiza"><span class="partido__hora">17:00</span><span class="partido__equipos">Gran final</span></li>
+            </ul>
+            <p class="dia__nota">Los cruces del domingo dependen de cómo termine la tabla el sábado.</p>
+          </div>
+        </div>
+
+        <p class="fuente">Fixture según el afiche publicado por @copa4naciones. Horarios sujetos a confirmación.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="patrocinadores" aria-labelledby="patrocinadores-titulo">
+    <div class="contenedor">
+      <h2 class="patrocinadores__titulo" id="patrocinadores-titulo">Nos acompañan</h2>
+      <ul class="patrocinadores__lista">
+        <li><img src="assets/sponsor-puma.png" alt="Puma" height="200" loading="lazy"></li>
+        <li><img src="assets/sponsor-centenario.png" alt="Alimentos Centenario" height="200" loading="lazy"></li>
+        <li><img src="assets/sponsor-rexona.png" alt="Rexona" height="200" loading="lazy"></li>
+        <li><img class="sponsor--ancho" src="assets/sponsor-zonalab.png" alt="Zona Lab Ciudad Deportiva by GBG" height="200" loading="lazy"></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="pie" id="redes">
+    <div class="franja" aria-hidden="true"></div>
+    <div class="contenedor pie__contenido">
+      <div class="pie__marca">
+        <img src="assets/escudo.png" alt="" width="371" height="546">
+        <div>
+          <p class="pie__titulo">Uruguay Creadores</p>
+          <p>Maqueta de propuesta, hecha por Santiago Wlodek y Enzo Lucarelli.</p>
+        </div>
+      </div>
+      <ul class="pie__redes" aria-label="Redes de Uruguay Creadores">
+        <li><a class="red" href="https://www.instagram.com/uruguaycreadores/" target="_blank" rel="noopener"><span class="red__nombre">Instagram</span><span class="red__usuario">@uruguaycreadores</span></a></li>
+        <li><a class="red" href="https://www.tiktok.com/@uruguaycreadores" target="_blank" rel="noopener"><span class="red__nombre">TikTok</span><span class="red__usuario">@UruguayCreadores</span></a></li>
+        <li><a class="red" href="https://x.com/UyCreadores" target="_blank" rel="noopener"><span class="red__nombre">X</span><span class="red__usuario">@UyCreadores</span></a></li>
+      </ul>
+      <p class="pie__legal">El escudo, las fotos y los datos pertenecen a Uruguay Creadores y a sus jugadores. Se usan solo para mostrar cómo podría verse el sitio.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
